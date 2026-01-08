@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sanjeev Khatiwada | Projects</title>
+    <!-- Fonts and Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- LINK TO CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal Style for Tech Pills to match 'CS Mentor' color dynamically -->
+    <style>
+        /* Default (Light Mode) - Matches .t-role color (#555) */
+        .tech-pill {
+            font-size: 11px;
+            font-weight: 600;
+            color: #555; /* Same as CS Mentor role */
+            border: 1px solid #ccc;
+            background-color: transparent;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-right: 5px;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        /* Hover effect */
+        .tech-pill:hover {
+            border-color: #555;
+            background-color: #f9f9f9;
+        }
+
+        /* Dark Mode Overrides */
+        body.dark-mode .tech-pill {
+            color: #b0b0b0; /* Matches dark mode role color */
+            border-color: #444;
+        }
+        body.dark-mode .tech-pill:hover {
+            background-color: #252525;
+            border-color: #888;
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-wrapper">
+    
+    <!-- HEADER -->
+    <header>
+        <img src="assets/Sanjeevimg.jpg" alt="Sanjeev Khatiwada" class="avatar">
+        <div class="header-content">
+            <h1>Sanjeev Khatiwada</h1>
+            <p>Computer Engineering Graduate, he/him/his</p>
+            <p><a href="https://nec.edu.np/">Nepal Engineering College (NEC)</a></p>
+            <div class="social-links">
+                <a href="mailto:skhatiwada8@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                <a href="assets/Sanjeev_Khatiwada_CV.pdf"><i class="fas fa-file-pdf"></i> CV</a>
+                <a href="https://www.linkedin.com/in/sanjeev-khatiwada/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+            <p style="font-size: 12px; color: #888; margin-top: 5px;">+977 9861495560</p>
+        </div>
+    </header>
+
+    <!-- NAVIGATION TABS -->
+    <div class="nav-tabs">
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="teaching.html">Teaching</a>
+    </div>
+
+    <!-- PROJECTS SECTION (Accordion: Active & Open by Default) -->
+    <section>
+        <h3 class="accordion-header active">
+            Academic Projects
+            <i class="fas fa-chevron-down icon"></i>
+        </h3>
+        <div class="accordion-content" style="display: block;">
+            <div class="timeline">
+                
+                <!-- Project 1 -->
+                <div class="timeline-item">
+                    <!-- Supervisor Link -->
+                    <span class="t-date" style="text-transform: none; font-weight: 500; letter-spacing: 0;">
+                        <i class="fas fa-user-tie" style="margin-right: 5px;"></i> Supervisor: <a href="https://scholar.google.com/citations?user=kVbyYtcAAAAJ&hl=en" target="_blank">Krishna Bikram Shah</a>
+                    </span>
+                    
+                    <p class="t-title">Fleet Management System for Waste Collection</p>
+                    
+                    <!-- Tech Stack (Grey Pills) -->
+                    <div style="margin: 8px 0 12px 0;">
+                        <span class="tech-pill">Python</span>
+                        <span class="tech-pill">Django</span>
+                        <span class="tech-pill">Flutter</span>
+                        <span class="tech-pill">SQLite</span>
+                        <span class="tech-pill">REST API</span>
+                    </div>
+
+                    <div class="t-desc">
+                        <p style="margin-top: 5px; margin-bottom: 5px;">
+                            I led the development of a city-scale fleet management system to address waste collection challenges through algorithmic optimization and real-time coordination.
+                        </p>
+                        <ul>
+                            <li>Designed a Collection Point Aggregation Algorithm using geospatial and operational constraints (population density, road accessibility, vehicle capacity), reducing average collection time.</li>
+                            <li>Built an event-driven dispatch system that injects real-time waste requests into active routes.</li>
+                            <li>Implemented an asynchronous notification service to synchronize schedules between drivers and households.</li>
+                            <li>Developed a Waste-for-Value incentive module to promote household-level recycling.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="timeline-item">
+                    <!-- Supervisor Link -->
+                    <span class="t-date" style="text-transform: none; font-weight: 500; letter-spacing: 0;">
+                        <i class="fas fa-user-tie" style="margin-right: 5px;"></i> Supervisor: <a href="https://scholar.google.com/citations?user=tSTKX5IAAAAJ&hl=en" target="_blank">Ashish Kr. Jha</a>
+                    </span>
+                    
+                    <p class="t-title">NepBiz: E-Commerce with Collaborative Filtering</p>
+                    
+                    <!-- Tech Stack (Grey Pills) -->
+                    <div style="margin: 8px 0 12px 0;">
+                        <span class="tech-pill">Python</span>
+                        <span class="tech-pill">Django</span>
+                        <span class="tech-pill">Scikit-Learn</span>
+                        <span class="tech-pill">Pandas</span>
+                    </div>
+
+                    <div class="t-desc">
+                        <p style="margin-top: 5px; margin-bottom: 5px;">
+                            Built a full-stack e-commerce platform for trekking equipment, integrating a memory-based K-NN algorithm collaborative filtering recommendation system.
+                        </p>
+                        <ul>
+                            <li>Implemented memory-based k-NN collaborative filtering without third-party libraries.</li>
+                            <li>Designed similarity metrics using rating overlap and weighted neighborhood aggregation.</li>
+                            <li>Achieved 20% improvement in recommendation precision over popularity baselines with <200ms latency.</li>
+                            <li>Addressed cold-start challenges through hybrid recommendation strategies.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="timeline-item">
+                    <p class="t-title">Self-Driving Agent Simulation</p>
+                    
+                    <!-- Tech Stack (Grey Pills) -->
+                    <div style="margin: 8px 0 12px 0;">
+                        <span class="tech-pill">Godot Engine</span>
+                        <span class="tech-pill">GDScript</span>
+                        <span class="tech-pill">Python</span>
+                        <span class="tech-pill">NEAT</span>
+                    </div>
+
+                    <div class="t-desc">
+                        <p style="margin-top: 5px; margin-bottom: 5px;">
+                            Developed a simulation environment to train autonomous agents to navigate complex environments while avoiding dynamic obstacles.
+                        </p>
+                        <ul>
+                            <li>Utilized the NEAT (Neuroevolution of Augmenting Topologies) algorithm to evolve neural networks for agent control.</li>
+                            <li>Simulated complex physics interactions and sensory inputs using Godot Engine.</li>
+                            <Li>Built full vehicle dynamics and LIDAR-like sensor simulation.</Li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<!-- DARK MODE BUTTON -->
+<button id="theme-toggle" class="theme-toggle-btn">
+    <i class="fas fa-moon"></i> Dark Mode
+</button>
+
+<!-- LINK TO JS FILE -->
+<script src="script.js"></script>
+</body>
+</html>
