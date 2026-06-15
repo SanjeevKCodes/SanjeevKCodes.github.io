@@ -49,20 +49,53 @@
         <div class="accordion-content" style="display: block;">
             <div class="timeline">
                 <div class="timeline-item">
-                    <span class="t-date">PREPRINT</span>
-                    <p class="t-title">[Paper Title Goes Here] <span class="status-badge">Preprint</span></p>
-                    <p class="t-role">Multimodal Out-of-Context Misinformation Detection — Nepali Political News</p>
+                    <p class="t-title">NepOOC-M: Bilingual Nepali-English Benchmark and Comparative Analysis of Multimodal Architectures for OOC Detection <span class="status-badge">Preprint</span></p>
+                    <p class="t-role">First author</p>
+
                     <div class="t-desc">
                         <p style="margin-top: 5px; margin-bottom: 5px;">
-                            [Abstract / short description of the paper goes here. Replace this placeholder once the preprint is uploaded.]
+                            Out-of-context (OOC) misinformation pairs real, unaltered images with misleading captions to construct false narratives — making detection a problem of text-image alignment rather than image forensics. Despite the prevalence of this kind of misinformation in Nepal, no public benchmark previously existed for it.
                         </p>
+                        <p style="margin-top: 5px; margin-bottom: 5px;">
+                            This paper introduces <strong>NepOOC</strong>, the first publicly available Nepali-dominant, multilingual OOC benchmark, containing 1,090 image-caption pairs (545 pristine, 545 OOC) annotated across five misinformation typologies with strong inter-annotator agreement (Cohen's κ = 0.84). It then systematically evaluates five multimodal architectures against text-only and image-only baselines.
+                        </p>
+                        <p style="margin-top: 5px; margin-bottom: 5px;">
+                            The central finding is that a text-only mBERT model performs statistically indistinguishably from the best multimodal system (ResNet-50 + mBERT), while image-only models perform near chance. This challenges the common assumption that multimodal fusion always helps in low-resource settings, and suggests that for Nepali OOC detection, dataset expansion is currently a more promising direction than architectural complexity.
+                        </p>
+
+                        <div class="skills-grid" style="margin-top: 12px;">
+                            <span class="skill-pill"><i class="fas fa-database"></i> 1,090 image-caption pairs</span>
+                            <span class="skill-pill"><i class="fas fa-tags"></i> 5 OOC typologies</span>
+                            <span class="skill-pill"><i class="fas fa-check-double"></i> κ = 0.84 agreement</span>
+                            <span class="skill-pill"><i class="fas fa-language"></i> Nepali · English · Code-switched</span>
+                            <span class="skill-pill"><i class="fas fa-sitemap"></i> 5 architectures evaluated</span>
+                        </div>
                     </div>
+
                     <div class="project-links">
-                        <a href="#" class="project-link secondary"><i class="fas fa-file-pdf"></i> Preprint (PDF)</a>
-                        <a href="#" class="project-link secondary"><i class="fab fa-github"></i> Code</a>
+                        <a href="assets/Research.pdf" class="project-link secondary" target="_blank"><i class="fas fa-file-pdf"></i> Preprint (PDF)</a>
+                        <a href="https://github.com/SanjeevKCodes/nepooc" class="project-link secondary" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://huggingface.co/datasets/theonlysanjeev/nepal-ooc-misinformation" class="project-link secondary" target="_blank"><i class="fas fa-database"></i> Dataset (Hugging Face)</a>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- RESEARCH INTERESTS SECTION (Accordion: Closed by Default) -->
+    <section>
+        <h3 class="accordion-header">
+            Research Interests
+            <i class="fas fa-chevron-down icon"></i>
+        </h3>
+        <div class="accordion-content">
+            <ul style="font-size: 13px; list-style-type: square; padding-left: 20px;">
+                <li><strong>Multimodal:</strong> How can models jointly reason over text, vision, and speech?</li>
+                <li><strong>Multilingual:</strong> How can we make NLP systems work for all of the world's languages?</li>
+                <li><strong>Transfer Learning:</strong> How can models use knowledge gained from a source task for a target task?</li>
+                <li><strong>Explainable AI (XAI):</strong> How can we make AI systems more transparent and interpretable, especially in high-stakes and low-resource settings?</li>
+            </ul>
+            <p style="margin-top: 10px;">Outside NLP, I am also open to exploring research in related domains such as Social Network Analysis, Computer Vision, and Multimodal Biomedical Informatics.</p>
         </div>
     </section>
 
