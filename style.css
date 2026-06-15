@@ -296,7 +296,137 @@ body.dark-mode footer { border-top-color: #333; }
 .theme-toggle-btn:hover { transform: scale(1.05); }
 
 /* =========================================
-   9. MOBILE RESPONSIVE
+   9. SKILLS GRID
+   ========================================= */
+.skills-category { margin-bottom: 22px; }
+.skills-category-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 10px 0;
+}
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.skill-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #444;
+    background-color: #f4f4f4;
+    border: 1px solid #eaeaea;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: all 0.25s ease;
+}
+.skill-pill:hover {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+    transform: translateY(-2px);
+}
+.skill-pill i { font-size: 13px; }
+
+body.dark-mode .skills-category-title { color: #777; }
+body.dark-mode .skill-pill {
+    background-color: #252525;
+    color: #d0d0d0;
+    border-color: #333;
+}
+body.dark-mode .skill-pill:hover {
+    background-color: #8ab4f8;
+    color: #121212;
+    border-color: #8ab4f8;
+}
+
+/* =========================================
+   10. PROJECT LINKS & STATUS BADGES
+   ========================================= */
+.project-links {
+    margin: 10px 0 8px 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff !important;
+    border-bottom: none !important;
+}
+.project-link:hover {
+    background-color: #0056b3;
+    color: #fff !important;
+    border-bottom: none !important;
+}
+.project-link.secondary {
+    background-color: transparent;
+    color: #555 !important;
+    border: 1px solid #ccc;
+}
+.project-link.secondary:hover {
+    background-color: #f9f9f9;
+    border-color: #555;
+    color: #333 !important;
+}
+body.dark-mode .project-link.secondary {
+    color: #d0d0d0 !important;
+    border-color: #444;
+}
+body.dark-mode .project-link.secondary:hover {
+    background-color: #252525;
+    border-color: #888;
+}
+
+.status-badge {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    margin-left: 8px;
+}
+body.dark-mode .status-badge {
+    background-color: #1b3a1e;
+    color: #81c784;
+}
+
+/* =========================================
+   11. SITE FOOTER
+   ========================================= */
+.site-footer {
+    text-align: center;
+    font-size: 11px;
+    color: #aaa;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+body.dark-mode .site-footer {
+    color: #666;
+    border-top-color: #333;
+}
+
+/* =========================================
+   13. MOBILE RESPONSIVE
    ========================================= */
 @media (max-width: 600px) {
     .main-wrapper { margin: 0; padding: 20px; border-radius: 0; box-shadow: none;}
