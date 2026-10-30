@@ -10,8 +10,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const setLabel = isDark => {
         toggleBtn.innerHTML = isDark
-            ? '<i class="fas fa-sun"></i> Light Mode'
-            : '<i class="fas fa-moon"></i> Dark Mode';
+            ? '<i class="fas fa-sun"></i>'
+            : '<i class="fas fa-moon"></i>';
+        toggleBtn.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+        toggleBtn.setAttribute('title', isDark ? 'Light mode' : 'Dark mode');
     };
 
     // Restore saved preference (storage can be unavailable, so guard it)
