@@ -20,6 +20,7 @@ body {
 }
 
 .main-wrapper {
+    position: relative;
     max-width: 800px;
     margin: 60px auto;
     background: #fff;
@@ -180,23 +181,26 @@ a.pub-btn:hover { color: #0056b3; border-color: #0056b3; border-bottom: 1px soli
    7. THEME TOGGLE BUTTON
    ========================================= */
 .theme-toggle-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #333;
-    color: #fff;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: #666;
     border: none;
-    padding: 10px 15px;
-    border-radius: 50px;
+    border-radius: 50%;
     cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    font-family: inherit;
-    font-size: 14px;
-    z-index: 1000;
-    transition: transform 0.3s;
+    font-size: 16px;
+    transition: background-color 0.2s, color 0.2s;
 }
-.theme-toggle-btn:hover { transform: scale(1.05); }
+.theme-toggle-btn:hover { background-color: rgba(0,0,0,0.06); color: #222; }
 .theme-toggle-btn:focus-visible { outline: 2px solid #8ab4f8; outline-offset: 2px; }
+body.dark-mode .theme-toggle-btn { color: #ccc; }
+body.dark-mode .theme-toggle-btn:hover { background-color: rgba(255,255,255,0.1); color: #fff; }
 
 /* =========================================
    8. DARK MODE
